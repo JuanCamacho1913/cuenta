@@ -9,6 +9,6 @@ public interface AccountService {
     public List<Account> findAll() throws Exception;
     public Account findByID(Long id) throws Exception;
     public Account save(Account entity) throws Exception;
-    public Account update(Long id, Account entity) throws Exception;
-    public boolean delete(Long id) throws Exception;
+    public Account update(Account entity) throws Exception;
+    public void delete(Long id) throws Exception;
 }

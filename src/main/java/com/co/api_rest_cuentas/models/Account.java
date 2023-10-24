@@ -5,8 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.io.Serializable;
+import org.springframework.hateoas.RepresentationModel;
 
 @Entity
 @Getter
@@ -14,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "cuentas")
-public class Account implements Serializable {
+public class Account extends RepresentationModel<Account> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
